@@ -9,7 +9,7 @@ function removeSameEle(arr) {
 	let res = [];
 	for(var i = 0; i < arr.length; i++) {
 		for(var j = 0; j < res.length; j++) {
-			if(arr[i] === arr[j]){ //判断结果中是否已存在该数据了
+			if(arr[i] === arr[j]){ // 判断结果中是否已存在该数据了
 				break;
 			}
 		}
@@ -27,7 +27,7 @@ function removeSameEle(arr) {
 	let res = [];
 	for(var i = 0; i < arr.length; i++) {
 		//if(!res.includes(arr[i])){
-		if(res.indexof(arr[i]) < 0) { //判断结果中是否存在该数据了
+		if(res.indexof(arr[i]) < 0) { // 判断结果中是否存在该数据了
 			res.push(arr[i])
 		}
 	}

@@ -14,7 +14,7 @@
 
 在需要使用lottie的页面中，在其`index.html`中引入`bodymovin.js`。示例如下:
 
-```javascript
+```html
 {% block preloadScript%}
 <script src="../../assets/lottie/bodymovin.min.js" async></script>
 {% endblock %}
@@ -100,7 +100,7 @@ animation.destroy(); // 删除该动画，移除相应的元素标签等。在un
 
 我们在lottie-web中可能也需要监听一些事件，比如加载完动画json文件时的`data_ready`事件。监听方法如下:
 
-```
+```javascript
 animation.addEventListener('data_ready', () => {
   console.log('animation data has loaded');
 });
@@ -108,7 +108,7 @@ animation.addEventListener('data_ready', () => {
 
 除了`data_ready`事件，下面还有一些其他常用的事件可以监听：
 
-```
+```markdown
 * complete: 播放完成（循环播放下不会触发）
 * loopComplete: 当前循环下播放（循环播放/非循环播放）结束时触发
 * enterFrame: 每进入一帧就会触发，播放时每一帧都会触发一次，stop方法也会触发

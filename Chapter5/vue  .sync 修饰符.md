@@ -20,7 +20,7 @@
 
 ```vue
 <child :foo.sync="msg"></child>
-就会被扩展为：
+// 就会被扩展为：
 <child :foo=”bar” @update:foo=”val => bar = val”> // @是v-on的简写
 ```
 

@@ -2,7 +2,7 @@
 
 ### 解决方案
 
-  两种解决方案，针对两种不同情况：
+两种解决方案，针对两种不同情况：
 
 1. 弹框数据少，无需滑动
 2. 弹框内数据需要滑动展示
@@ -68,8 +68,7 @@
   首先，我们使用正常的vue操作，比如刚才的修饰符/语法糖进行操作时，虽然可以屏蔽掉背景数据滑动，但是该事件同时会将弹框内的滑动也阻止掉，我们则无法完成该需求。如果这个不行，我们还有别的方法来完成需求吗？
    我考虑到一种方案，但是属于DOM操作，与vue的初衷可能不太符合。不过此方案也不矢为一种能够有效解决问题的办法。
 
-> 思路：
->  利用css`position: fixed`以及`top: x px`来固定位置。步骤分解如下：
+> 思路：利用css`position: fixed`以及`top: x px`来固定位置。步骤分解如下：
 
 1. 写一个样式放到公共css中备用；
 
@@ -99,7 +98,7 @@
 
 ##### c. 两个案例完整代码
 
-```html
+```vue
 <template>
     <div class="modalTest">
         <!-- 按钮组 -->
@@ -117,7 +116,11 @@
         </div>
 
         <!-- 弹框1 -->
-        <div class="modalBox" v-if="modalSign1" @touchmove.prevent @click.self="modalSign1 = false">
+        <div
+             class="modalBox"
+             v-if="modalSign1"
+             @touchmove.prevent
+             @click.self="modalSign1 = false">
             <div class="modal">
                 <ul>
                     <li v-for="item in 8">这是第{{item}}条数据</li>

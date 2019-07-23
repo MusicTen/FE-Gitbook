@@ -215,7 +215,7 @@ Session 存储在我们的服务器上，就是在我们的服务器上保存用
 
 例如：
 
-```
+```bash
 GET www.baidu.com HTTP/1.1
 ```
 
@@ -291,7 +291,7 @@ GET www.baidu.com HTTP/1.1
 
    也就是多个请求和响应可以利用同一个 TCP 连接，而不是每一次请求响应都要新建一个TCP连接，减少了建立和关闭连接的消耗和延迟。
 
-   ```
+   ```javascript
    Connection: keep-alive
    ```
 

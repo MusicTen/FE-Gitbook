@@ -38,7 +38,7 @@ var add = function add(a, b) {
 
 我们还是拿上面的🌰来说明 `const add = (a, b) => a + b;`，这样一句简单的代码，我们来看看它生成的 `AST` 会是怎样的：
 
-```javascript
+```json
 {
   "type": "Program",
   "body": [
@@ -100,5 +100,5 @@ var add = function add(a, b) {
 2. **Transform(转换)**：对（抽象语法树）做一些特殊处理，让它符合编译器的期望
 3. **Generate(代码生成)**：将第二步经过转换过的（抽象语法树）生成新的代码
 
-嗯... 既然 `Babel` 是一个编译器，当然它的工作过程也是这样的。
+既然 `Babel` 是一个编译器，当然它的工作过程也是这样的。
 

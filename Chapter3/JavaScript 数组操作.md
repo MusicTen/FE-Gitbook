@@ -34,10 +34,10 @@ const maxInNumbers = Math.max.apply(Math, numbers)
 const minInNumbers = Math.min.apply(Math, numbers)
 
 console.log(maxInNumbers)
-> Result: 90
+// Result: 90
 
 console.log(minInNumbers)
-> Result: -99
+// Result: -99
 ```
 
 另外还可以使用ES6的`...`运算符(展开运算符)来完成：
@@ -45,9 +45,9 @@ console.log(minInNumbers)
 ```javascript
 const numbers = [1, 2, 3, 4];
 Math.max(...numbers) 
-> Result: 4
+// Result: 4
 
 Math.min(...numbers) 
-> > Result: 1
+// Result: 1
 ```
 

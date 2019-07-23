@@ -70,7 +70,7 @@ body {
 mainColor = #0982c1
 siteWidth = 1024px
 $borderStyle = dotted
- 
+
 body
   color mainColor
   border 1px $borderStyle mainColor

@@ -106,6 +106,7 @@ A的路由：
         keepAlive: true // 需要被缓存
     }
 }
+
 export default {
     data() {
         return {};
@@ -117,6 +118,7 @@ export default {
         next();
     }
 };
+
 export default {
     data() {
         return {};
