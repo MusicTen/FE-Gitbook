@@ -46,23 +46,13 @@ let p = new Proxy(target, {
 
 **为啥呢？**
 
-我们知道 Object.defineProperty 是有局限性的，他的拦截的 target 就是单纯的对象的key的值
-
-所以呢，对象属性的删减，数组，数组长度的改变，它就没法进行劫持了
-
-而 ES6 的新特性，**Proxy**，它可以拦截对象，数组几乎一切对象包装类型
-
-但是 Proxy 没法兼容 IE，所以 Vue3.0 底层还是采用 Object.defineProperty
-
-而 使用 Proxy 作为一个 api ，也就是说：
+我们知道 Object.defineProperty 是有局限性的，他的拦截的 target 就是单纯的对象的key的值。所以呢，对象属性的删减，数组，数组长度的改变，它就没法进行劫持了。而 ES6 的新特性，**Proxy**，它可以拦截对象，数组几乎一切对象包装类型。但是 Proxy 没法兼容 IE，所以 Vue3.0 底层还是采用 Object.defineProperty。而 使用 Proxy 作为一个 api ，也就是说：
 
 **我们不兼容IE， 就大胆用 Proxy 双向绑定而且不会有属性删减和数组劫持不到的问题**
 
 **我们要兼容IE，就用原来的双向绑定，但是要注意它的不能劫持部分变化的缺陷**
 
-从上图我们可以看到，Observer 观察了 object 值的变化，这是一种观察者模式
-
-而 Observer 将观察的信号发布给订阅器这是一种 发布订阅模式
+从上图我们可以看到，Observer 观察了 object 值的变化，这是一种观察者模式。而 Observer 将观察的信号发布给订阅器这是一种 发布订阅模式
 
 ### 那么观察者模式与发布订阅模式有什么区别呢？
 

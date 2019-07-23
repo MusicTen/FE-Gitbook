@@ -2,7 +2,7 @@
 
 很多时候，通过重置数据将页面重置时，子组件可以提供重置的方法，或者提供props重置自己的状态。但是相对麻烦，那可以使用强制刷新来实现刷新组件。
 
-### [.$nextTick( callback)](https://cn.vuejs.org/v2/api/#vm-nextTick)
+### .$nextTick( callback)
 
 #### 组件
 
@@ -20,7 +20,7 @@ this.$nextTick(() => {
 });
 ```
 
-### [.$forceUpdate()](https://cn.vuejs.org/v2/api/#vm-forceUpdate)
+### .$forceUpdate()
 
 迫使 Vue 实例重新渲染。注意它仅仅影响实例本身和插入插槽内容的子组件，而不是所有子组件。
 
@@ -64,7 +64,7 @@ this.$nextTick(() => {
 
 ### 方案二： key
 
-通过vue `key` 实现，原理[官方文档](https://cn.vuejs.org/v2/guide/list.html#%E7%BB%B4%E6%8A%A4%E7%8A%B6%E6%80%81)。所以当key 值变更时，会自动的重新渲染。
+通过vue `key` 实现，原理参考官方文档。所以当key 值变更时，会自动的重新渲染。
 
 ```vue
 <template>

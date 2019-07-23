@@ -43,6 +43,8 @@
   - [动画库-lottie-web](Chapter7/动画库-lottie-web.md)
   - [视频播放-ckplayer、videoJs](Chapter7/视频播放-ckplayer、videoJs.md)
 
+- [第八章 例子](Chapter8/README.md)
+
 - [第九章 面试](Chapter9/README.md)
   - [面试题汇总](Chapter9/面试题汇总.md)
   - [节流与防抖](Chapter9/节流与防抖.md)

@@ -4,7 +4,7 @@
 
 就是一个网站有不同的角色，比如管理员和普通用户，要求不同的角色能访问的页面是不一样的。如果一个页面，有角色越权访问，这时就得做出限制了。
 
-[Vue 动态添加路由及生成菜单](https://github.com/woai3c/Front-end-articles/blob/master/dynamic-routing.md)这是我写过的一篇文章，通过动态添加路由和菜单来做控制，不能访问的页面不添加到路由表里，这是其中一种办法。
+我们可以通过动态添加路由和菜单来做控制，不能访问的页面不添加到路由表里，这是其中一种办法。
 
 另一种办法就是所有的页面都在路由表里，只是在访问的时候要判断一下角色权限。如果有权限就让访问，没有权限就拒绝，跳转到 404 页面。
 
@@ -58,7 +58,7 @@ router.beforeEach((to, from, next) => {
 网站一般只要登陆过一次后，接下来该网站的其他页面都是可以直接访问的，不用再次登陆。
 我们可以通过 `token` 或 `cookie` 来实现，下面用代码来展示一下如何用 `token` 控制登陆验证。
 
-```
+```javascript
 router.beforeEach((to, from, next) => {
     // 如果有token 说明该用户已登陆
     if (localStorage.getItem('token')) {
@@ -78,6 +78,4 @@ router.beforeEach((to, from, next) => {
     }
 })
 ```
-
-上述所有实现，都可以在我的[vue轻量级后台管理系统基础模板](https://github.com/woai3c/vue-admin-template)项目里找到
 
