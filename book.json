@@ -1,0 +1,14 @@
+{
+    "title": "MusicTen 知识汇总",
+    "author": "MusicTen",
+    "description": "select * from learn",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "structure": {
+        "readme": "README.md"
+    },
+    "plugins": [
+		"splitter",
+		"expandable-chapters"
+	]
+}
