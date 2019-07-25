@@ -24,16 +24,14 @@
    git checkout gh-pages
    ```
 
-3. 删除远程gh-pages分支
+3. 删除远程gh-pages分支（可有可无，若4步上传出错，执行）
 
    ```bash
    git push origin --delete gh-pages
    ```
 
-4.  上传gh-pages分支到远程仓库
+4. 上传gh-pages分支到远程仓库
 
    ```bash
-   git push -u origin gh-pages
+   git push origin gh-pages
    ```
-
-删除远程分支：git push origin --delete 分支名
