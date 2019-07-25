@@ -37,14 +37,14 @@ function video(className,url){
    };
    return videoObject;
 };
-var player=new ckplayer("容器","rtmp格式地址");
+var player=new ckplayer("容器", "rtmp格式地址");
 ```
 
 截止目前，所有工作就已完毕，一个简单的直播功能就搭建好了，ckplayer中提供了很多视频配置，具体配置请参照官网（一般配置是去掉播放器的logo，这里我就拿这一个功能进行举例）。
 
 在ckplayer.js文件中，找到style配置参数，将style内部的loading和logo配置的部分代码注释掉就可以了。
 
-本示例是直接调用了一个视频地址进行播放，这里的示例提供的是一个mp4文件，同时也支持flv,f4v,m3u8，也支持rtmp协议，播放器会自动选择使用html5还是flashplayer进行播放，html5播放器优先。
+本示例是直接调用了一个视频地址进行播放，这里的示例提供的是一个mp4文件，同时也支持flv、f4v、m3u8，也支持rtmp协议，播放器会自动选择使用html5还是flashplayer进行播放，html5播放器优先。
 
 ## video.js
 
@@ -69,10 +69,10 @@ videojs使用方式就是以类似的方式开始的，不过由于我们借助v
 ```javascript
 var player = videojs('example_video_1',{
     muted: true,
-	controls : true/false,
-	height:300, 
-	width:300,
-	loop : true,
+	controls: true/false,
+	height: 300, 
+	width: 300,
+	loop: true,
 	// 更多配置.....
 });
 ```
@@ -96,7 +96,7 @@ var player = videojs('example_video_1', options, function onPlayerReady() {
   // 注意，这个地方的上下文， this 指向的是Video.js的实例对像player
   this.play();
 
-  // How about an event listener?<br>  // 如何使用事件监听？
+  // How about an event listener?<br> // 如何使用事件监听？
   this.on('ended', function() {
     videojs.log('播放结束了!');
   });
@@ -106,14 +106,23 @@ var player = videojs('example_video_1', options, function onPlayerReady() {
 #### 常用选项
 
 - autoplay: true/false 播放器准备好之后，是否自动播放 【默认false】
+
 - controls: true/false 是否拥有控制条 【默认true】,如果设为false ,那么只能通过api进行控制了。也就是说界面上不会出现任何控制按钮
+
 - height: 视频容器的高度，字符串或数字 单位像素 比如： height:300 or height:'300px'
+
 - width: 视频容器的宽度, 字符串或数字 单位像素
+
 - loop: true/false 视频播放结束后，是否循环播放
+
 - muted : true/false 是否静音
+
 - poster: 播放前显示的视频画面，播放开始之后自动移除。通常传入一个URL
+
 - preload: 预加载
-  	‘auto‘ 自动
-    	’metadata‘ 元数据信息 ，比如视频长度，尺寸等
-    	‘none‘ 不预加载任何数据，直到用户开始播放才开始下载
-- children: Array | Object 可选子组件 从基础的Component组件继承而来的子组件，数组中的顺序将影响组件的创建顺序哦。
+  'auto' 自动
+  'metadata' 元数据信息，比如视频长度，尺寸等
+
+  'none' 不预加载任何数据，直到用户开始播放才开始下载
+
+- children: Array | Object 可选子组件 从基础的Component组件继承而来的子组件，数组中的顺序将影响组件的创建顺序。
