@@ -13,7 +13,7 @@
 #### data中 hardReset
 
 ```javascript
-/*某一操作重置数据*/
+/* 某一操作重置数据 */
 this.hardReset= false
 this.$nextTick(() => {
     this.hardReset= true
@@ -82,6 +82,6 @@ this.$nextTick(() => {
                 ++this.menuKey
             }
        }
-}
+   }
 </script>
 ```

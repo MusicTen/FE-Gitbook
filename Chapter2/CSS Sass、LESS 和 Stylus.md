@@ -120,7 +120,7 @@ section {
     a {
       color: #0982C1;
  
-      &amp;:hover {
+      &:hover {
         text-decoration: underline;
       }
     }
@@ -131,13 +131,13 @@ section {
 stylus还可省略花括号，书写更加方便，根据个人喜好还可删除中间冒号。
 
 ```stylus
-section 
+section
   margin: 10px;
-  nav 
+  nav
     height: 25px;
-    a 
+    a
       color: #0982C1;
-      &amp;:hover 
+      &:hover
         text-decoration: underline;
 ```
 
@@ -235,7 +235,7 @@ desaturate(color, 10%);
 示例如下：
 
 ```stylus
-color = #0982C1 
+color = #0982C1
 h1
   background color
   border 3px solid darken(color, 50%)
@@ -247,17 +247,18 @@ h1
 
 注意：导入文件中定义的混入、变量等信息也将会被引入到主样式文件中，因此需要避免它们互相冲突。 
 例如： 
-1.css:
+
+1. css:
 
 ```css
-//1.css
+// 1.css
 /* file.{type} */
 body {
   background: #000;
 }
 ```
 
-2.XXX:
+2. XXX:
 
 ```css
 @ import "1.css";

@@ -39,7 +39,7 @@ function test() {
     console.log(this.a);
 }
 // 相当于window.test();  window调用，指向window
-test();  // 20
+test(); // 20
 ```
 
 ### 1-2 示例：
@@ -68,7 +68,7 @@ var test = {
     }
 }
 // test调用init方法，this指向test
-test.init();  // 40
+test.init(); // 40
 ```
 
 ### 1-3 示例：
@@ -99,7 +99,7 @@ var test = {
 }
 var fn = test.init;
 // 相当于window.fn，这里的this指向window
-fn();  // 20
+fn(); // 20
 ```
 
 ### 1-4 示例：
@@ -131,7 +131,7 @@ var test = {
             console.log(this.a);
         }
         // 相当于window.go
-        go();  // 20
+        go(); // 20
     }
 }
 test.init();
@@ -162,23 +162,20 @@ test.init();
 this.a = 20;
 var test = {
     a: 40,
-    
     // 构造函数的优先级(访问权限) > 原型链
     init: function () {
         // 构造方法
         function go() {
             this.a = 50;
         }
-
         // 原型链
         go.prototype.a = 60;
-
         // new的时候，this就会指向new出来的对象
         // 用new调go，this就指向实例
         console.log((new go()).a);
     }
 }
-test.init();  // 50
+test.init(); // 50
 ```
 
 ### 1-6 示例：
@@ -213,7 +210,7 @@ var test = {
         console.log(this.a);
     }
 }
-test.init();  // 20
+test.init(); // 20
 ```
 
 ### 1-7 示例：
@@ -222,7 +219,7 @@ test.init();  // 20
 function fn() {
     console.log(this.length);
 }
-fn();  // iframe数量
+fn(); // iframe数量
 ```
 
 **答案：** 0
@@ -233,5 +230,5 @@ fn();  // iframe数量
 function fn() {
     console.log(this.length);
 }
-fn();  // 0 => iframe数量
+fn(); // 0 => iframe数量
 ```

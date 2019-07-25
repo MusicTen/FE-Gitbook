@@ -46,7 +46,7 @@ let p = new Proxy(target, {
 
 **为啥呢？**
 
-我们知道 Object.defineProperty 是有局限性的，他的拦截的 target 就是单纯的对象的key的值。所以呢，对象属性的删减，数组，数组长度的改变，它就没法进行劫持了。而 ES6 的新特性，**Proxy**，它可以拦截对象，数组几乎一切对象包装类型。但是 Proxy 没法兼容 IE，所以 Vue3.0 底层还是采用 Object.defineProperty。而 使用 Proxy 作为一个 api ，也就是说：
+我们知道 Object.defineProperty 是有局限性的，他的拦截的 target 就是单纯的对象的key的值。所以呢，对象属性的删减，数组，数组长度的改变，它就没法进行劫持了。而 ES6 的新特性**Proxy**，它可以拦截对象，数组几乎一切对象包装类型。但是 Proxy 没法兼容 IE，所以 Vue3.0 底层还是采用 Object.defineProperty。而 使用 Proxy 作为一个 api ，也就是说：
 
 **我们不兼容IE，就大胆用 Proxy 双向绑定而且不会有属性删减和数组劫持不到的问题**
 

@@ -4,9 +4,9 @@
 
 在模板中有**两种场景**可以使用：
 
-1、在 <router-view>外面包括
+1. 在 <router-view>外面包括
 
-2、在组件外面包括 （如 <keep-alive> <edit></edit> </keep-live>）
+2. 在组件外面包括 （如 <keep-alive> <edit></edit> </keep-live>）
 
 添加完后，默认里面的一切页面/组件都会被缓存，这可能不是我们想要的，这时候需要做一些处理。
 

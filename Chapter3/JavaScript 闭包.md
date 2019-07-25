@@ -5,9 +5,11 @@
   - 闭包是 JS 函数作用域的副产品。
 
 - 为什么需要闭包？ 
+
   - 局部变量无法共享和长久的保存，而全局变量可能造成变量污染，所以我们希望有一种机制既可以长久的保存变量又不会造成全局污染。
 
 - 何时使用？ 
+
   - 变量既想反复使用，又想避免全局污染
 
 - 如何使用？ 
@@ -20,6 +22,7 @@
   - 不容易被释放
 
 - 怎么解决闭包的内存泄漏？ 
+
   - 严格说起来不算是闭包的问题，主要是因为`ie`的bug，`ie`在我们使用完闭包之后，依然回收不了闭包里面引用的变量。
 
 - 什么是内存泄露？ 
@@ -33,12 +36,12 @@
 
     ```javascript
     function example() {
-          var element = document.getElementByID("div1");  //div1用完之后一直驻留在内存中
+          var element = document.getElementByID("div1"); // div1用完之后一直驻留在内存中
           element.onclick = function() {
               alert("This is a leak!"); // 这里用div1导致内存泄露
           }
           // 添加的语句
-          element = null;  // 最后应将div1解除引用来避免内存泄露
+          element = null; // 最后应将div1解除引用来避免内存泄露
     }
     ```
 

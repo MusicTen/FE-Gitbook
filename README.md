@@ -1,6 +1,6 @@
 # MusicTen-知识拾遗
 
-使用 markdown 写博客，坚持写出的 markdown 文件尽最大可能保持自文档特性，即语法简洁容易理解，尽量不包含 github 不支持显示的语法。换句话说，就是尽量以 [GFM–GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown) 为标准。所以我避免使用一切 Jekyll tag，除了数学公式（github 现在还不支持常见的以$符识别 tex 的特性，但数学公式实在不可避免）。
+使用 markdown 写博客，写出的 markdown 文件尽最大可能保持其文档特性，即语法简洁容易理解，尽量不包含 github 不支持显示的语法。换句话说，就是尽量以 [GFM–GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown) 为标准。所以避免使用一切 Jekyll tag，除了数学公式（github 现在还不支持常见的以$符识别 tex 的特性，但数学公式实在不可避免）。
 
 > Liquid是 `Shopify` 开发的简易灵活安全的标记语言。一个重要的应用场景就是Jekyll。Jekyll使用Liquid作为模板语言, 加入了一些标签和filter。
 

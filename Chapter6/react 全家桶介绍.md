@@ -366,7 +366,7 @@ const Title = value => <h1>{value}</h1>;
 - `.withComponent`：创建一个新的StyledComponent，并应用于其他的标签或组件，且使用相同的样式
   如：用标签替换标签，但还是使用相同的样式，相当于有的样式标签一样都有
 
-  ```jsx
+  ```javascript
   const Link = Button.withComponent('a')
   ```
 

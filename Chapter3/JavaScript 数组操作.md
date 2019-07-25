@@ -35,7 +35,6 @@ const minInNumbers = Math.min.apply(Math, numbers)
 
 console.log(maxInNumbers)
 // Result: 90
-
 console.log(minInNumbers)
 // Result: -99
 ```
@@ -46,7 +45,6 @@ console.log(minInNumbers)
 const numbers = [1, 2, 3, 4];
 Math.max(...numbers) 
 // Result: 4
-
 Math.min(...numbers) 
 // Result: 1
 ```

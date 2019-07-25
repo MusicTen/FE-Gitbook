@@ -40,7 +40,11 @@
         </div>
 
         <!-- 弹框1 -->
-        <div class="modalBox" v-if="modalSign1" @touchmove.prevent @click.self="modalSign1 = false">
+        <div
+             class="modalBox"
+             v-if="modalSign1"
+             @touchmove.prevent
+             @click.self="modalSign1 = false">
             <div class="modal">
                 <ul>
                     <li v-for="item in 8">这是第{{item}}条数据</li>
@@ -172,7 +176,6 @@
             }
         },
         mounted() {
-
         }
     }
 </script>
@@ -236,13 +239,14 @@
 
 ##### d. 备注
 
-*.modalOpen的css样式，放在公共样式中，因为我们要改变的是body的样式，因此在组件中写的样式可能会失效。例如，我将样式放在了src/assets/css/common.css*
+`.modalOpen`的css样式，放在公共样式中，因为我们要改变的是body的样式，因此在组件中写的样式可能会失效。例如，我将样式放在了`src/assets/css/common.css`
 
 ```css
-/*弹层*/
+/* 弹层 */
 body.modalOpen {
-    -webkit-overflow-scrolling:touch;
+    -webkit-overflow-scrolling: touch;
     position: fixed;
     width: 100%;
 }
 ```
+
