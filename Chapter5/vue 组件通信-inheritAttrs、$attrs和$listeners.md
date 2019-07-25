@@ -40,8 +40,8 @@ inheritAttrs、attrs和attrs和listeners使用场景：
    export default {
      data() {
         return {
-          foo:"Hello, world",
-          coo:"Hello, LSO"
+          foo: "Hello, world",
+          coo: "Hello, LSO"
         }
      },
      components:{fatherDom},
