@@ -8,7 +8,26 @@
         "readme": "README.md"
     },
     "plugins": [
-		"splitter",
-		"expandable-chapters"
-	]
+        "github",
+        "favicon",
+        "splitter",
+        "pageview-count",
+        "expandable-chapters",
+        "back-to-top-button",
+        "tbfed-pagefooter"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/MusicTen"
+        },
+        "favicon": {
+            "shortcut": "assets/favicon.ico",
+            "bookmark": "assets/favicon.ico"
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright &copy MusicTen 2019",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    }
 }
