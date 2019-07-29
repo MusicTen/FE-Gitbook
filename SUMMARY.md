@@ -1,5 +1,4 @@
 - [MusicTen](https://github.com/MusicTen/FE-Gitbook)
-
 ------
 
 # 目录
@@ -10,6 +9,7 @@
 - [第二章 CSS](Chapter2/README.md)
   - [页面导入样式时，使用link和@import有什么区别](Chapter2/1.md)
   - [Sass、LESS 和 Stylus](Chapter2/2.md)
+  - [圣杯布局和双飞翼布局](Chapter2/3.md)
 
 - [第三章 JavaScript](Chapter3/README.md)
   - [this指向](Chapter3/1.md)
