@@ -31,7 +31,7 @@
    		},
         "tbfed-pagefooter": {
             "copyright": "Copyright &copy MusicTen 2019",
-            "modify_label": "最后修改时间：",
+            "modify_label": "Updated at",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     }
