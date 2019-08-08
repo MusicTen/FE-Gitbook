@@ -8,25 +8,31 @@
 * [第一章 HTML](Chapter1/html.md)
 
 - [第二章 CSS](Chapter2/css.md)
-  - [页面导入样式时，使用link和@import有什么区别](Chapter2/1.md)
+  - [导入样式时link和@import区别](Chapter2/1.md)
   - [Sass、Less和Stylus](Chapter2/2.md)
   - [圣杯布局和双飞翼布局](Chapter2/3.md)
   - [文本溢出隐藏](Chapter2/4.md)
+  - [伪类与伪元素](Chapter2/5.md)
 
 - [第三章 JavaScript](Chapter3/javascript.md)
-  - [this指向](Chapter3/1.md)
-  - [call、apply和bind](Chapter3/2.md)
-  - [闭包](Chapter3/3.md)
-  - [浅拷贝与深拷贝](Chapter3/4.md)
-  - [数组操作](Chapter3/5.md)
-  - [数组去重](Chapter3/6.md)
-  - [字符串操作](Chapter3/7.md)
-  - [获取当天0点时间](Chapter3/8.md)
+
+  - JavaScript基础
+    - [字符串操作](Chapter3/基础/01.md)
+    - [数字操作](Chapter3/基础/11.md)
+    - [数组操作](Chapter3/基础/21.md)
+    - [数组去重](Chapter3/基础/22.md)
+    - [时间操作](Chapter3/基础/31.md)
+
+  - JavaScript高级
+    - [this指向](Chapter3/高级/1.md)
+    - [call、apply和bind](Chapter3/高级/2.md)
+    - [闭包](Chapter3/高级/3.md)
+    - [浅拷贝与深拷贝](Chapter3/高级/4.md)
 
 - [第四章 ES6](Chapter4/ES6.md)
   - [初学 Babel 工作原理](Chapter4/1.md)
   - [模块化/组件化+AMD/CMD](Chapter4/2.md)
-  - [promise中的reject](Chapter4/3.md)
+  - [Promise中的reject](Chapter4/3.md)
 
 - [第五章 vue](Chapter5/vue.md)
   - [.sync 修饰符](Chapter5/1.md)
@@ -46,6 +52,7 @@
 - [第七章 插件](Chapter7/README.md)
   - [动画库-lottie-web](Chapter7/1.md)
   - [视频播放-ckplayer、videoJs](Chapter7/2.md)
+  - [webpack的可视化资源分析工具](Chapter7/3.md)
 
 - [第八章 例子](Chapter8/README.md)
 
