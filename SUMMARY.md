@@ -7,8 +7,8 @@
 * [前言](README.md)
 
 - [第一章 HTML](Chapter1-HTML/html.md)
-
   - [window 与 document](Chapter1-HTML/1.md)
+  - [标签](Chapter1-HTML/2.md)
 
 - [第二章 CSS](Chapter2-CSS/css.md)
   - [导入样式时link和@import区别](Chapter2-CSS/1.md)
@@ -60,4 +60,4 @@
   - [面试题汇总](Chapter9-面试/1.md)
   - [节流与防抖](Chapter9-面试/2.md)
   - [script标签defer、async](Chapter9-面试/3.md)
-  - [HTTP 的15个常见知识点复习](Chapter9-面试/4.md)
+  - [HTTP 常见知识点复习](Chapter9-面试/4.md)
