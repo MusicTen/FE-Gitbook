@@ -1,8 +1,8 @@
 # vue
 
-一套用于构建用户界面的渐进式JavaScript框架。
+一套用于构建用户界面的渐进式JavaScript框架
 
-```
+```bath
 vue create hello-vue
 # 选择这个
 > Manually select feature

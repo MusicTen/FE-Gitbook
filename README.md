@@ -1,5 +1,7 @@
 # MusicTen-知识拾遗
 
+坚持往前走
+
 ## gitbook发布到gh-pages分支
 
 1. 在master主分支上，输入 `gitbook build` 命令，生成一个 `_book` 文件夹
@@ -25,6 +27,14 @@
    ```bash
    git push origin gh-pages
    ```
+
+等同以上命令：
+
+```bash
+git subtree push --prefix=_book origin gh-pages
+```
+
+意思就是把指定的`_book`文件提交到gh-pages分支上(`.gitignore`勿忽略`_book`)
 
 > window系统上起启动gitbook服务后， 如果本地文件发生更改，热加载会失败。
 >
