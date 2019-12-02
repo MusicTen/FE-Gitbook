@@ -49,3 +49,7 @@ git subtree push --prefix=_book origin gh-pages
 代码块通过加语法高亮更容易阅读，在栅栏式代码块基础之上，增加一个可选的语言标字符(如 ruby，C，C++，pyhon等等)，GFM通过此种方式来进行代码语法高亮
 
 > GFM使用[Linguist](https://github.com/github/linguist)来检测语言进行语法高亮，可以参阅[YAML file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)来确定哪些关键字的语言被支持
+
+## .gitignore规则不生效
+
+.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的

@@ -34,5 +34,12 @@
             "modify_label": "Updated at",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
+    },
+    "links": {
+        "sharing": {
+            "facebook": false,
+            "twitter": false,
+            "all": false
+        }
     }
 }
