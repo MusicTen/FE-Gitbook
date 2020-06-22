@@ -23,16 +23,16 @@ Application Programming Interface：应用程序编程接口。是一些预先�
 
 - Element 对象
 
-  - element.offsetWidth  返回元素的宽度
-  - element.offsetHeight  返回元素的高度
-  - element.style  设置或返回元素的 style 属性
+  - element.offsetWidth   返回元素的宽度
+  - element.offsetHeight   返回元素的高度
+  - element.style   设置或返回元素的 style 属性
   - element.appendChild()   向元素添加新的子节点，作为最后一个子节点
 
 - Attribute 对象
 
 - Event 对象
 
-  - onclick  当用户点击某个对象时调用的事件句柄
+  - onclick   当用户点击某个对象时调用的事件句柄
 
   - onerror   在加载文档或图像时发生错误
   - onload   一个页面或一幅图像完成加载
@@ -77,30 +77,28 @@ BOM(Browser Object Model) 是指浏览器对象模型，浏览器对象模型提
 
 - history 对象（用户(在浏览器窗口中)访问过的 URL） // 方法：
 
-  history 对象 
+  - back( )    加载 history 列表中的前一个 URL
 
-  - back( )　　加载 history 列表中的前一个 URL
+  - forward( )    加载 history 列表中的下一个 URL
 
-  - forward( )　　加载 history 列表中的下一个 URL
-
-  - go( )      加载 history 列表中的某个具体页面
+  - go( )    加载 history 列表中的某个具体页面
 
 - navigator 对象（包含有关浏览器的信息） // 常用属性：
-  - userAgent　　判断用户浏览器的类型
-  - platform　　判断浏览器所在的操作系统和平台类型
+  - userAgent    判断用户浏览器的类型
+  - platform    判断浏览器所在的操作系统和平台类型
 
 - location 对象（包含当前URL信息） // 常用属性：
-  - href　　设置或返回完整的URL
-  - host　　设置或返回主机名和当前 URL 的端口号
-  - search　　设置或返回从问号 (?) 开始的 URL（查询部分）
-  - hash　　设置或返回从井号 (#) 开始的 URL（锚）
-  - port　　设置或返回当前URL的端口号
+  - href    设置或返回完整的URL
+  - host    设置或返回主机名和当前 URL 的端口号
+  - search    设置或返回从问号 (?) 开始的 URL（查询部分）
+  - hash    设置或返回从井号 (#) 开始的 URL（锚）
+  - port    设置或返回当前URL的端口号
 
 - screen 对象 // 常用属性：
-  - width   返回显示器屏幕的宽度
-  - height   返回显示器屏幕的高度
+  - width  返回显示器屏幕的宽度
+  - height  返回显示器屏幕的高度
 
 - 三种对话框（模态框）
   - alert()  警告框，只有一个按钮“确定”无返回值
-  - confirm() 确认框，有确定和取消两个按钮，用户点击确认返回值为 true，点击取消返回 false
-  - prompt()  提示框，返回输入的消息，用户点击确认，返回值为输入的值，点击取消返回null
+  - confirm()  确认框，有确定和取消两个按钮，用户点击确认返回值为 true，点击取消返回 false
+  - prompt()  提示框，返回输入的消息，用户点击确认，返回值为输入的值，点击取消返回 null
