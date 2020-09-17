@@ -14,6 +14,7 @@
   - [跨域](Chapter1-HTML/04cross-domain.md)
   - [window与document](Chapter1-HTML/05window-and-document.md)
   - [WebAPI](Chapter1-HTML/06WebAPI.md)
+  - [iframe](Chapter1-HTML/07iframe.md)
 - [第二章 CSS](Chapter2-CSS/css.md)
   - [导入样式时link和@import区别](Chapter2-CSS/1.md)
   - [Sass、Less和Stylus](Chapter2-CSS/2.md)
@@ -21,6 +22,7 @@
   - [文本溢出隐藏](Chapter2-CSS/4.md)
   - [伪类与伪元素](Chapter2-CSS/5.md)
   - [响应式](Chapter2-CSS/6.md)
+  - [Grid](Chapter2-CSS/7.md)
 - [第三章 JavaScript](Chapter3-JavaScript/javascript.md)
   - JavaScript基础
     - [字符串操作](Chapter3-JavaScript/基础/01.md)
@@ -29,6 +31,7 @@
     - [数组去重](Chapter3-JavaScript/基础/22.md)
     - [冒泡排序](Chapter3-JavaScript/基础/23.md)
     - [数组并集交集差集](Chapter3-JavaScript/基础/24.md)
+    - [reduce](Chapter3-JavaScript/基础/25.md)
     - [时间操作](Chapter3-JavaScript/基础/31.md)
   - JavaScript高级
     - [原型与原型链](Chapter3-JavaScript/高级/1.md)
@@ -39,6 +42,7 @@
     - [节流与防抖](Chapter3-JavaScript/高级/6.md)
     - [递归](Chapter3-JavaScript/高级/7.md)
     - [js设计模式-单例模式](Chapter3-JavaScript/高级/8.md)
+    - [简单优雅的JavaScript代码片段](Chapter3-JavaScript/高级/9.md)
 - [第四章 ES6](Chapter4-ES6/ES6.md)
   - [初学 Babel 工作原理](Chapter4-ES6/1.md)
   - [模块化/组件化+AMD/CMD](Chapter4-ES6/2.md)
@@ -61,9 +65,13 @@
   - [vue.config.js](Chapter5-vue/13.md)
   - [总结vue知识体系之高级应用篇](Chapter5-vue/14.md)
   - [vue+typescript](Chapter5-vue/15.md)
+  - [vuex--严格模式](Chapter5-vue/16.md)
 - [第六章 react](Chapter6-react/react.md)
   - [jsx](Chapter6-react/1.md)
   - [全家桶介绍](Chapter6-react/2.md)
+  - [Immutable.js](Chapter6-react/3.md)
+  - [Redux-Saga](Chapter6-react/4.md)
+  - [hooks](Chapter6-react/5.md)
 - 第七章 tool
   - Git
     - [Git vs SVN](Chapter7-tool/Git/1.md)
