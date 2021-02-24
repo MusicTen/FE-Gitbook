@@ -67,11 +67,11 @@
   - [vue+typescript](Chapter5-vue/15.md)
   - [vuex--严格模式](Chapter5-vue/16.md)
 - [第六章 react](Chapter6-react/react.md)
-  - [jsx](Chapter6-react/1.md)
-  - [全家桶介绍](Chapter6-react/2.md)
-  - [Immutable.js](Chapter6-react/3.md)
+  - [全家桶介绍](Chapter6-react/1.md)
+  - [jsx](Chapter6-react/2.md)
+  - [hooks](Chapter6-react/3.md)
   - [Redux-Saga](Chapter6-react/4.md)
-  - [hooks](Chapter6-react/5.md)
+  - [Immutable.js](Chapter6-react/5.md)
 - 第七章 tool
   - Git
     - [Git vs SVN](Chapter7-tool/Git/1.md)
