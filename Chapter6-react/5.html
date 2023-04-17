@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>hooks · MusicTen 知识拾遗</title>
+        <title>Immutable.js · MusicTen 知识拾遗</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -995,7 +995,7 @@
                 <a href="1.html">
             
                     
-                    jsx
+                    全家桶介绍
             
                 </a>
             
@@ -1008,7 +1008,7 @@
                 <a href="2.html">
             
                     
-                    全家桶介绍
+                    jsx
             
                 </a>
             
@@ -1021,7 +1021,7 @@
                 <a href="3.html">
             
                     
-                    Immutable.js
+                    hooks
             
                 </a>
             
@@ -1047,7 +1047,7 @@
                 <a href="5.html">
             
                     
-                    hooks
+                    Immutable.js
             
                 </a>
             
@@ -1600,7 +1600,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >hooks</a>
+        <a href=".." >Immutable.js</a>
     </h1>
 </div>
 
@@ -1615,14 +1615,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="hooks">hooks</h1>
-<p>&#x63D0;&#x4F9B;&#x4E86;&#x5728;&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;state&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x6B64;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x8981;&#x4F7F;&#x7528;state&#x7684;&#x8BDD;&#x53EA;&#x80FD;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Class&#x5F62;&#x5F0F;&#x7684;Component</p>
+                                <h1 id="immutablejs">Immutable.js</h1>
+<p>Facebook &#x5DE5;&#x7A0B;&#x5E08; Lee Byron &#x82B1;&#x8D39; 3 &#x5E74;&#x65F6;&#x95F4;&#x6253;&#x9020;&#xFF0C;&#x4E0E; React &#x540C;&#x671F;&#x51FA;&#x73B0;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x88AB;&#x9ED8;&#x8BA4;&#x653E;&#x5230; React &#x5DE5;&#x5177;&#x96C6;&#x91CC;&#xFF08;React &#x63D0;&#x4F9B;&#x4E86;&#x7B80;&#x5316;&#x7684; Helper&#xFF09;&#x3002;&#x5B83;&#x5185;&#x90E8;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x5957;&#x5B8C;&#x6574;&#x7684; Persistent Data Structure&#xFF0C;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x6613;&#x7528;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x50CF; Collection&#x3001;List&#x3001;Map&#x3001;Set&#x3001;Record&#x3001;Seq&#x3002;&#x6709;&#x975E;&#x5E38;&#x5168;&#x9762;&#x7684;map&#x3001;filter&#x3001;groupBy&#x3001;reduce&#x3001;find&#x51FD;&#x6570;&#x5F0F;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x3002;&#x540C;&#x65F6; API &#x4E5F;&#x5C3D;&#x91CF;&#x4E0E; Object &#x6216; Array &#x7C7B;&#x4F3C;&#x3002;</p>
+<h3 id="immutablejs-&#x7684;&#x51E0;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;">Immutable.js &#x7684;&#x51E0;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<ul>
+<li>List: &#x6709;&#x5E8F;&#x7D22;&#x5F15;&#x96C6;&#xFF0C;&#x7C7B;&#x4F3C;JavaScript&#x4E2D;&#x7684;Array&#x3002;</li>
+<li>Map: &#x65E0;&#x5E8F;&#x7D22;&#x5F15;&#x96C6;&#xFF0C;&#x7C7B;&#x4F3C;JavaScript&#x4E2D;&#x7684;Object&#x3002;</li>
+<li>OrderedMap: &#x6709;&#x5E8F;&#x7684;Map&#xFF0C;&#x6839;&#x636E;&#x6570;&#x636E;&#x7684;set()&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</li>
+<li>Set: &#x6CA1;&#x6709;&#x91CD;&#x590D;&#x503C;&#x7684;&#x96C6;&#x5408;&#x3002;</li>
+<li>OrderedSet: &#x6709;&#x5E8F;&#x7684;Set&#xFF0C;&#x6839;&#x636E;&#x6570;&#x636E;&#x7684;add&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</li>
+<li>Stack: &#x6709;&#x5E8F;&#x96C6;&#x5408;&#xFF0C;&#x652F;&#x6301;&#x4F7F;&#x7528;unshift()&#x548C;shift()&#x6DFB;&#x52A0;&#x548C;&#x5220;&#x9664;&#x3002;</li>
+<li>Record: &#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x751F;&#x6210;Record&#x5B9E;&#x4F8B;&#x7684;&#x7C7B;&#x3002;&#x7C7B;&#x4F3C;&#x4E8E;JavaScript&#x7684;Object&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x63A5;&#x6536;&#x7279;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;key&#xFF0C;&#x5177;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</li>
+<li>Seq: &#x5E8F;&#x5217;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x80FD;&#x4E0D;&#x80FD;&#x7531;&#x5177;&#x4F53;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x652F;&#x6301;&#x3002;</li>
+<li>Collection: &#x662F;&#x6784;&#x5EFA;&#x6240;&#x6709;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x57FA;&#x7C7B;&#xFF0C;&#x4E0D;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6784;&#x5EFA;&#x3002;</li>
+</ul>
 <blockquote>
-<p>Hooks &#x7684;&#x5751; 99% &#x90FD;&#x662F;&#x95ED;&#x5305;&#x5F15;&#x8D77;&#x7684;</p>
+<p>&#x7528;&#x7684;&#x6700;&#x591A;&#x5C31;&#x662F;List&#x548C;Map</p>
 </blockquote>
-<p>&#x5B9E;&#x95ED;&#x5305;&#x5F15;&#x53D1;&#x7684;&#x95EE;&#x9898;&#x591A;&#x534A;&#x662F;&#x4FDD;&#x5B58;&#x4E86; old &#x7684;&#x503C;&#xFF0C;&#x53EA;&#x8981;&#x60F3;&#x529E;&#x6CD5;&#x62FF;&#x5230;&#x6700;&#x65B0;&#x7684;&#x503C;&#x5176;&#x5B9E;&#x57FA;&#x672C;&#x4E0A;&#x5C31;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x4E86; </p>
-<footer class="page-footer"><span class="copyright">Copyright &#xA9; MusicTen 2019-2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated at
-2020-09-17 10:56:48
+<p>&#x4ECE;&#x95EE;&#x9898;&#x8BF4;&#x8D77;&#xFF1A;</p>
+<p>&#x719F;&#x6089; React &#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x8BDD;&#x90FD;&#x77E5;&#x9053;&#xFF1A;&#x8C03;&#x7528; <a href="https://link.zhihu.com/?target=http%3A//facebook.github.io/react/docs/component-api.html%23setstate" target="_blank">setState</a> &#x65B9;&#x6CD5;&#x603B;&#x662F;&#x4F1A;&#x89E6;&#x53D1; <a href="https://link.zhihu.com/?target=http%3A//facebook.github.io/react/docs/component-specs.html%23render" target="_blank">render</a> &#x65B9;&#x6CD5;&#x4ECE;&#x800C;&#x8FDB;&#x884C; vdom re-render &#x76F8;&#x5173;&#x903B;&#x8F91;&#xFF0C;&#x54EA;&#x6015;&#x5B9E;&#x9645;&#x4E0A;&#x4F60;&#x6CA1;&#x6709;&#x66F4;&#x6539;&#x5230; Component.state &#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.state = {count: <span class="hljs-number">0</span>}
+<span class="hljs-keyword">this</span>.setState({count: <span class="hljs-number">0</span>}) <span class="hljs-comment">// &#x7EC4;&#x4EF6; state &#x5E76;&#x672A;&#x88AB;&#x6539;&#x53D8;&#xFF0C;&#x4F46;&#x4ECD;&#x4F1A;&#x89E6;&#x53D1; render &#x65B9;&#x6CD5;</span>
+</code></pre>
+<p>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x6027;&#x80FD;&#x4E0A;&#x7684;&#x6D6A;&#x8D39;&#xFF0C;React &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A; <a href="https://reactjs.org/docs/react-component.html#updating-shouldcomponentupdate" target="_blank">shouldComponentUpdate</a> &#x6765;&#x63A7;&#x5236;&#x89E6;&#x53D1; vdom re-render &#x903B;&#x8F91;&#x7684;&#x6761;&#x4EF6;&#x3002;&#x4E8E;&#x662F; <a href="https://reactjs.org/docs/pure-render-mixin.html" target="_blank">PureRenderMixin</a> &#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x4F18;&#x5316;&#x6280;&#x5DE7;&#x88AB;&#x4F7F;&#x7528;&#x3002;</p>
+<blockquote>
+<p>pureRender&#x7684;&#x601D;&#x60F3;&#xFF1A;&#x7B80;&#x5355;&#x6765;&#x8BB2;&#x5C31;&#x662F;&#x53EA;&#x91CD;&#x65B0;diff&#x548C;&#x6E32;&#x67D3;&#x6570;&#x636E;(props, states)&#x6539;&#x53D8;&#x4E86;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x907F;&#x514D;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x91CD;&#x65B0;diff&#x548C;&#x6E32;&#x67D3;</p>
+</blockquote>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x5B8C;&#x7F8E;&#x4E86;&#xFF1F;&#x5E76;&#x4E0D;&#x662F;&#x3002;&#x53BB;&#x8DB4;&#x4E00;&#x8DB4; PureRenderMixin &#x7684;&#x6E90;&#x7801;&#xFF08; <a href="https://github.com/facebook/react/blob/master/src/shared/utils/shallowEqual.js" target="_blank">react/shallowEqual.js at master &#xB7; facebook/react &#xB7; GitHub</a> &#xFF09;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x5B83;&#x4EC5;&#x4EC5;&#x662F;&#x6D45;&#x6BD4;&#x8F83;&#x5BF9;&#x8C61;&#xFF0C;&#x6DF1;&#x5C42;&#x6B21;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x6839;&#x672C;&#x4E0D;&#x7BA1;&#x7528;&#x3002;</p>
+<p>&#x8FD9;&#x65F6;&#x5019; immutableJS &#x5C31;&#x6D3E;&#x5F97;&#x4E0A;&#x7528;&#x573A;&#x4E86; </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; MusicTen 2019-2023 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated at
+2023-04-17 07:56:50
 </span></footer>
                                 
                                 </section>
@@ -1662,7 +1684,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"hooks","level":"2.7.5","depth":2,"next":{"title":"第七章 tool","level":"2.8","depth":1,"ref":"","articles":[{"title":"Git","level":"2.8.1","depth":2,"ref":"","articles":[{"title":"Git vs SVN","level":"2.8.1.1","depth":3,"path":"Chapter7-tool/Git/1.md","ref":"Chapter7-tool/Git/1.md","articles":[]},{"title":"Git常用命令","level":"2.8.1.2","depth":3,"path":"Chapter7-tool/Git/2.md","ref":"Chapter7-tool/Git/2.md","articles":[]},{"title":"Git clone方式","level":"2.8.1.3","depth":3,"path":"Chapter7-tool/Git/3.md","ref":"Chapter7-tool/Git/3.md","articles":[]}]},{"title":"webpack","level":"2.8.2","depth":2,"ref":"","articles":[{"title":"前端打包黑暗史","level":"2.8.2.1","depth":3,"path":"Chapter7-tool/webpack/1.md","ref":"Chapter7-tool/webpack/1.md","articles":[]},{"title":"一看就懂之webpack基础配置(上)","level":"2.8.2.2","depth":3,"path":"Chapter7-tool/webpack/2.md","ref":"Chapter7-tool/webpack/2.md","articles":[]},{"title":"一看就懂之webpack基础配置(下)","level":"2.8.2.3","depth":3,"path":"Chapter7-tool/webpack/3.md","ref":"Chapter7-tool/webpack/3.md","articles":[]},{"title":"手摸手使用 webpack4","level":"2.8.2.4","depth":3,"path":"Chapter7-tool/webpack/4.md","ref":"Chapter7-tool/webpack/4.md","articles":[]},{"title":"webpack的可视化资源分析工具","level":"2.8.2.5","depth":3,"path":"Chapter7-tool/webpack/6.md","ref":"Chapter7-tool/webpack/6.md","articles":[]}]},{"title":"工具","level":"2.8.3","depth":2,"ref":"","articles":[{"title":"抓包工具","level":"2.8.3.1","depth":3,"path":"Chapter7-tool/工具/1.md","ref":"Chapter7-tool/工具/1.md","articles":[]},{"title":"搭建公司开发环境","level":"2.8.3.2","depth":3,"path":"Chapter7-tool/工具/2.md","ref":"Chapter7-tool/工具/2.md","articles":[]},{"title":"yarn与npm","level":"2.8.3.3","depth":3,"path":"Chapter7-tool/工具/3.md","ref":"Chapter7-tool/工具/3.md","articles":[]},{"title":"nrm","level":"2.8.3.4","depth":3,"path":"Chapter7-tool/工具/4.md","ref":"Chapter7-tool/工具/4.md","articles":[]},{"title":"gitbook","level":"2.8.3.5","depth":3,"path":"Chapter7-tool/工具/5.md","ref":"Chapter7-tool/工具/5.md","articles":[]}]},{"title":"插件","level":"2.8.4","depth":2,"ref":"","articles":[{"title":"动画库-lottie-web","level":"2.8.4.1","depth":3,"path":"Chapter7-tool/插件/1.md","ref":"Chapter7-tool/插件/1.md","articles":[]},{"title":"前端游戏引擎","level":"2.8.4.2","depth":3,"path":"Chapter7-tool/插件/2.md","ref":"Chapter7-tool/插件/2.md","articles":[]},{"title":"视频播放-ckplayer、videoJs","level":"2.8.4.3","depth":3,"path":"Chapter7-tool/插件/3.md","ref":"Chapter7-tool/插件/3.md","articles":[]},{"title":"下拉刷新与上拉加载","level":"2.8.4.4","depth":3,"path":"Chapter7-tool/插件/6.md","ref":"Chapter7-tool/插件/6.md","articles":[]},{"title":"H5保存分享图","level":"2.8.4.5","depth":3,"path":"Chapter7-tool/插件/7.md","ref":"Chapter7-tool/插件/7.md","articles":[]},{"title":"前端唯一标识那些事儿","level":"2.8.4.6","depth":3,"path":"Chapter7-tool/插件/8.md","ref":"Chapter7-tool/插件/8.md","articles":[]},{"title":"城市联级选择器","level":"2.8.4.7","depth":3,"path":"Chapter7-tool/插件/9.md","ref":"Chapter7-tool/插件/9.md","articles":[]}]}]},"previous":{"title":"Redux-Saga","level":"2.7.4","depth":2,"path":"Chapter6-react/4.md","ref":"Chapter6-react/4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","favicon","splitter","page-toc-button","pageview-count","expandable-chapters","back-to-top-button","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy MusicTen 2019-2020","modify_label":"Updated at","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/MusicTen"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"MusicTen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MusicTen 知识拾遗","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":false,"all":false}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"Chapter6-react/5.md","mtime":"2020-09-17T02:56:48.658Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-17T02:58:15.032Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Immutable.js","level":"2.7.5","depth":2,"next":{"title":"第七章 tool","level":"2.8","depth":1,"ref":"","articles":[{"title":"Git","level":"2.8.1","depth":2,"ref":"","articles":[{"title":"Git vs SVN","level":"2.8.1.1","depth":3,"path":"Chapter7-tool/Git/1.md","ref":"Chapter7-tool/Git/1.md","articles":[]},{"title":"Git常用命令","level":"2.8.1.2","depth":3,"path":"Chapter7-tool/Git/2.md","ref":"Chapter7-tool/Git/2.md","articles":[]},{"title":"Git clone方式","level":"2.8.1.3","depth":3,"path":"Chapter7-tool/Git/3.md","ref":"Chapter7-tool/Git/3.md","articles":[]}]},{"title":"webpack","level":"2.8.2","depth":2,"ref":"","articles":[{"title":"前端打包黑暗史","level":"2.8.2.1","depth":3,"path":"Chapter7-tool/webpack/1.md","ref":"Chapter7-tool/webpack/1.md","articles":[]},{"title":"一看就懂之webpack基础配置(上)","level":"2.8.2.2","depth":3,"path":"Chapter7-tool/webpack/2.md","ref":"Chapter7-tool/webpack/2.md","articles":[]},{"title":"一看就懂之webpack基础配置(下)","level":"2.8.2.3","depth":3,"path":"Chapter7-tool/webpack/3.md","ref":"Chapter7-tool/webpack/3.md","articles":[]},{"title":"手摸手使用 webpack4","level":"2.8.2.4","depth":3,"path":"Chapter7-tool/webpack/4.md","ref":"Chapter7-tool/webpack/4.md","articles":[]},{"title":"webpack的可视化资源分析工具","level":"2.8.2.5","depth":3,"path":"Chapter7-tool/webpack/6.md","ref":"Chapter7-tool/webpack/6.md","articles":[]}]},{"title":"工具","level":"2.8.3","depth":2,"ref":"","articles":[{"title":"抓包工具","level":"2.8.3.1","depth":3,"path":"Chapter7-tool/工具/1.md","ref":"Chapter7-tool/工具/1.md","articles":[]},{"title":"搭建公司开发环境","level":"2.8.3.2","depth":3,"path":"Chapter7-tool/工具/2.md","ref":"Chapter7-tool/工具/2.md","articles":[]},{"title":"yarn与npm","level":"2.8.3.3","depth":3,"path":"Chapter7-tool/工具/3.md","ref":"Chapter7-tool/工具/3.md","articles":[]},{"title":"nrm","level":"2.8.3.4","depth":3,"path":"Chapter7-tool/工具/4.md","ref":"Chapter7-tool/工具/4.md","articles":[]},{"title":"gitbook","level":"2.8.3.5","depth":3,"path":"Chapter7-tool/工具/5.md","ref":"Chapter7-tool/工具/5.md","articles":[]}]},{"title":"插件","level":"2.8.4","depth":2,"ref":"","articles":[{"title":"动画库-lottie-web","level":"2.8.4.1","depth":3,"path":"Chapter7-tool/插件/1.md","ref":"Chapter7-tool/插件/1.md","articles":[]},{"title":"前端游戏引擎","level":"2.8.4.2","depth":3,"path":"Chapter7-tool/插件/2.md","ref":"Chapter7-tool/插件/2.md","articles":[]},{"title":"视频播放-ckplayer、videoJs","level":"2.8.4.3","depth":3,"path":"Chapter7-tool/插件/3.md","ref":"Chapter7-tool/插件/3.md","articles":[]},{"title":"下拉刷新与上拉加载","level":"2.8.4.4","depth":3,"path":"Chapter7-tool/插件/6.md","ref":"Chapter7-tool/插件/6.md","articles":[]},{"title":"H5保存分享图","level":"2.8.4.5","depth":3,"path":"Chapter7-tool/插件/7.md","ref":"Chapter7-tool/插件/7.md","articles":[]},{"title":"前端唯一标识那些事儿","level":"2.8.4.6","depth":3,"path":"Chapter7-tool/插件/8.md","ref":"Chapter7-tool/插件/8.md","articles":[]},{"title":"城市联级选择器","level":"2.8.4.7","depth":3,"path":"Chapter7-tool/插件/9.md","ref":"Chapter7-tool/插件/9.md","articles":[]}]}]},"previous":{"title":"Redux-Saga","level":"2.7.4","depth":2,"path":"Chapter6-react/4.md","ref":"Chapter6-react/4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","favicon","splitter","page-toc-button","pageview-count","expandable-chapters","back-to-top-button","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy MusicTen 2019-2023","modify_label":"Updated at","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/MusicTen"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"assets/favicon.ico","bookmark":"assets/favicon.ico"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"MusicTen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MusicTen 知识拾遗","language":"zh-hans","links":{"sharing":{"facebook":false,"twitter":false,"all":false}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"Chapter6-react/5.md","mtime":"2023-04-17T07:56:50.114Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-04-17T08:00:15.111Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
