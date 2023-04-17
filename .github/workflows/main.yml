@@ -27,7 +27,6 @@ jobs:
     - name: generate _book folder
       run: |
         gitbook build
-        cp _book
                 
     - name: push _book to branch gh-pages 
       env:
